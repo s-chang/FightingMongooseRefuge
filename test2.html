@@ -1,0 +1,373 @@
+<!DOCTYPE hmtl>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Test 2 </title>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="blueberry.css">
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			border: 0;
+			padding: 0;
+					
+		}
+		html{
+			overflow: auto;
+			
+		}
+		
+		body{
+			background: #f0f0f0;
+			font: 14px/20px Arial, San-Serif;
+			color: #555;
+			margin: 0;
+		}
+		
+		h1{
+			text-align: center;
+			font-size: 180%;
+			line-height: 120%;
+			padding: 5% 0;
+		}
+		
+		h2{
+			text-decoration: underline;
+			line-height: 280%;
+			padding-left: 2%;
+			
+		}
+		
+		h3{
+			line-height: 110%;
+			padding: 5% 0;
+			
+		}
+		
+		p{
+			padding: 1%;
+		}
+		img {
+			text-align: center;
+			max-width: 100%;
+			height: auto;
+			width: auto;
+		}
+		a{
+			color: #FFF;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		a:hover{
+			color: #AAA;
+			text-decoration: underline;
+			
+		}
+		
+		header{
+			background: #333333;
+			min-width: 720px;
+			width: 100%;
+			height: 86px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 100;
+			opacity: 0.90;
+			overflow: hidden;
+			 
+		}
+		
+		#logo {
+			margin: 20px;
+			float: left;
+			width: 200px;
+			height: 60px;
+			background: url(<!--URL image GOES HERE -->) no-repeat-center;
+		}
+		nav{
+			float: right;
+			padding: 35px 20px 20px 0;
+		}
+		#menu-icon{
+			display: hidden;
+			width: 40px;
+			height: 40px;
+			background: url(<!--URL image goes here -->) center;
+		}
+		a:hover#menu-icon{
+			border-radius: 4px 4px 0 0;
+			
+		}
+		
+		
+	
+		ul{
+			list-style: none;
+			white-space: nowrap;
+					
+			
+		}
+		
+		li{
+			
+			display: inline-block;
+			
+		}
+		
+		header ul{
+			list-style: none;
+			white-space: nowrap;
+			float: left;	
+			
+		}
+		
+		header li{
+			display: inline-block;
+			white-space: nowrap;
+			width: auto;
+			
+		}
+		
+		nav ul li{
+			display: inline-block;
+			float: left;
+			padding: 10px;		
+			white-space: nowrap;
+		}
+		
+		.current{
+			color: #FFF;
+			text-decoration: underline;
+			margin-top: 110px;
+		}
+		
+		#doc{
+			margin: 40px 0;
+		}
+		#content{
+			margin: 0 auto;
+			max-width: 1140px;
+		}
+		.blueberry{
+			max-width: 960px;
+			margin-top: 110px;
+		}
+		
+		section{
+			width: 29%;
+			float: left;
+			margin: 2% 2%; 
+			text-align: center;
+		}
+		
+		.clear{
+			clear: both;
+		}
+		article{
+			float: left;
+			margin: 0 auto;
+			width: 50%;
+			height: auto;
+			padding: 4%;
+		}
+		
+		aside{
+			float: right;
+			margin: 0 auto;
+			width: 35%;
+			height: auto;
+			padding: 3%;
+		}
+		
+		ul.try li{
+			padding-left: 3%;
+		}
+		
+		footer{
+			background: #333333;
+			min-width: 720px;
+			width: 100%;
+			overflow: hidden;
+			opacity: 0.90;
+			padding: lrem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		
+		footer p, footer h3{
+			color: #FFF;
+			
+		}
+		
+		footer p a{
+			color: #FFF;
+			text-decoration: none;
+		}
+		
+		ul.social li{
+			display: inline;
+		}
+		ul.social li img{
+			height: 50px;
+			
+		}
+	
+		
+		/*----MEDIA-----*/
+		
+		@media screen and(max-width: 478px){
+			body{
+				position: absolute;
+			}
+		}
+		
+		@media screen and(max-width: 478px){
+			header{
+				position: absolute;
+			}
+			#menu-icon{
+				display:inline-block;
+			}
+			nav ul, nav:active ul{
+				display: none;
+				position: absolute;
+				padding: 20px;
+				background: #405580;
+				border: 1px solid #FFF;
+				right: 20px;
+				top: 60px;
+				width: 50%;
+				border-radius: 2px 0 2px 2px;
+			}
+			nav li{
+				text-align: center;
+				width: 100%;
+				padding: 10px 0;
+				margin: 0;
+			}
+			
+			nav:hover ul{
+				display: block;
+			}
+			
+			section{
+				float: left;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			aside{
+				float: left;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		
+
+		
+		
+		
+	</style>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="jquery.blueberry.js"></script>
+	<script>
+		$(window).load(function(){
+			$('.blueberry').blueberry();
+			}
+		);
+	</script>
+</head>
+
+<body>
+	<header>
+		<!-- # keeps on same page -->
+		<a href="#" id="logo"></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<!--insert url in place of # -->
+				<li><a href="#" class="current">Home</a></li>
+				<li><a href="#" >Projects</a></li>
+				<li><a href="#" >Resume</a></li>
+				<li><a href="#" >Portfolio</a></li>
+				<li><a href="#" >About Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--image slider -->
+	<div id="doc">
+		<div id="content">
+			<div class="blueberry">
+				<!--embed slide -->
+				<ul class="slide">
+					<!--insert url for image-->
+					<li><img src=""</li>
+					<li><img src=""</li>
+					<li><img src=""</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<section>
+		<!--image/header/paragragh -->
+		<img src="" />
+		<h1> </h1>
+		<p> </p>
+	</section>
+	
+	<div class="clear"></div>
+	
+	
+	<!-- list shows up on the right side -->
+	<aside>
+		<h2> </h2>
+		<ul class="try">
+			<li><h3> </h3></li>
+			<li><h3> </h3></li>
+			<li><h3> </h3></li>
+			<li><h3> </h3></li>
+			<li><h3> </h3></li>
+		</ul>
+	</aside>
+	
+	<footer>
+		<!-- Personal Information -->
+		<section>
+			<h3><b> Test </b></h3>
+			<p><b> Phone Number </b> <br><br>
+				address <br>
+			
+			</p>
+		</section>
+		<!--Social Media -->
+		<section>
+			<h3>Connect with Me</h3>
+			<ul class="social">
+				<!--replace first # with url to site, replace second # with url for image -->
+				<li><a href="#"><img src="#"> </li>
+			</ul>
+		</section>
+		
+		<section>
+			<h3>Copyright Info</h3>
+		</section>
+	</footer>
+	
+
+	
+</body>
+
+
+</html>
